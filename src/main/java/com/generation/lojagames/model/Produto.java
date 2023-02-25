@@ -31,7 +31,6 @@ public class Produto {
 
     private int quantidade;
 
-    @JsonIgnore
     @JsonIgnoreProperties("produto")
     @ManyToOne
     private Categoria categoria;

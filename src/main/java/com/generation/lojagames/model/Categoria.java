@@ -19,7 +19,6 @@ public class Categoria {
     @Size(min = 3, max = 200, message = "O campo nomedeve conter no mínimo 03 e no máximo 50 caracteres")
     private String nome;
 
-    @JsonIgnore
     @JsonIgnoreProperties("categoria")
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
     private List<Produto> produto;
